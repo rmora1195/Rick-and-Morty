@@ -1,0 +1,33 @@
+.hero {
+	width: 100%;
+	height: 40vh;
+	/* background-attachment: fixed; */
+	background-image: url('https://wallpapers.com/images/featured/rick-and-morty-cool-t3ynu5ly9m7jq6e2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	/* para que en dispositivos pequeños tenga una separación--- padding */
+	padding: 0.75em 2em;
+}
+
+@media (min-width: 1024px) {
+	.hero {
+		height: 50vh;
+	}
+}
+
+/* dark mode */
+[data-theme='dark'] {
+	background-color: #121212; /* Fondo oscuro */
+	color: #ffffff; /* Texto claro */
+}
+
+[data-theme='light'] {
+	background-color: #ffffff; /* Fondo claro */
+	color: #000000; /* Texto oscuro */
+}
